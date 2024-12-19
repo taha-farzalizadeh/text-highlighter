@@ -1,11 +1,11 @@
 
-# `js-test-highlighter` Documentation
+# `js-text-highlighter` Documentation
 
 ---
 
 ### **Overview**
 
-`js-test-highlighter` is a JavaScript library designed to help you highlight specific text in an HTML element. It provides customizable options for matching text and styling it with various colors. This package supports automatic text highlight updates when content changes and allows you to easily manage and configure highlighting settings.
+`js-text-highlighter` is a JavaScript library designed to help you highlight specific text in an HTML element. It provides customizable options for matching text and styling it with various colors. This package supports automatic text highlight updates when content changes and allows you to easily manage and configure highlighting settings.
 
 The library supports React, Vue, Angular, and plain JavaScript environments.
 
@@ -13,18 +13,18 @@ The library supports React, Vue, Angular, and plain JavaScript environments.
 
 ### **Installation**
 
-To get started with `js-test-highlighter`, you need to install the package.
+To get started with `js-text-highlighter`, you need to install the package.
 
 #### **Using npm:**
 
 ```bash
-npm install js-test-highlighter
+npm install js-text-highlighter
 ```
 
 #### **Using yarn:**
 
 ```bash
-yarn add js-test-highlighter
+yarn add js-text-highlighter
 ```
 
 ---
@@ -36,7 +36,7 @@ yarn add js-test-highlighter
 In this example, we'll show you how to highlight text in an HTML element.
 
 ```javascript
-import { createHighlighter } from 'js-test-highlighter';
+import { createHighlighter } from 'js-text-highlighter';
 
 const options = {
   texts: ['highlight', 'text'],  // List of texts to be highlighted
@@ -56,7 +56,7 @@ In a React component, you can use the highlighter like this:
 
 ```jsx
 import React, { useEffect, useRef } from 'react';
-import { createHighlighter } from 'js-test-highlighter';
+import { createHighlighter } from 'js-text-highlighter';
 
 const HighlighterComponent = () => {
   const contentRef = useRef(null);
@@ -97,7 +97,7 @@ In a Vue component, you can use the highlighter as follows:
 </template>
 
 <script>
-import { createHighlighter } from 'js-test-highlighter';
+import { createHighlighter } from 'js-text-highlighter';
 
 export default {
   mounted() {
@@ -123,7 +123,7 @@ In an Angular component, you can integrate the highlighter like this:
 
 ```typescript
 import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
-import { createHighlighter } from 'js-test-highlighter';
+import { createHighlighter } from 'js-text-highlighter';
 
 @Component({
   selector: 'app-highlighter',
@@ -161,7 +161,7 @@ For plain JavaScript usage, you can easily highlight an element like this:
   JavaScript is a versatile programming language.
 </div>
 
-<script src="node_modules/js-test-highlighter/dist/index.js"></script>
+<script src="node_modules/js-text-highlighter/dist/index.js"></script>
 <script>
   const options = {
     texts: ['JavaScript', 'versatile'],
@@ -211,7 +211,7 @@ For plain JavaScript usage, you can easily highlight an element like this:
 
 ### **Customizing Highlights**
 
-You can further customize the behavior of `js-test-highlighter`:
+You can further customize the behavior of `js-text-highlighter`:
 
 - **Text matching**: You can pass any string to the `texts` array to match specific words. The library supports regular expressions for more complex matching.
 - **Multiple colors**: Each text match can have a different highlight color, and the library will cycle through the provided colors if more matches are found than the number of colors.
@@ -231,4 +231,4 @@ highlighter.highlight(document.getElementById('dynamic-content'), true);
 
 ### **Conclusion**
 
-`js-test-highlighter` is a flexible and powerful tool for highlighting text in various JavaScript frameworks. It integrates seamlessly into React, Vue, Angular, and plain JavaScript environments, allowing you to customize the text highlight functionality as needed.
+`js-text-highlighter` is a flexible and powerful tool for highlighting text in various JavaScript frameworks. It integrates seamlessly into React, Vue, Angular, and plain JavaScript environments, allowing you to customize the text highlight functionality as needed.
